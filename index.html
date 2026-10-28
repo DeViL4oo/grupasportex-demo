@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#111317" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Grupa Sportex — cięcie laserowe blach, gięcie CNC, spawanie konstrukcji stalowych i lakierowanie proszkowe ALCOLOR. Zakład produkcyjny w Mostach na Pomorzu."
+    />
+    <title>Grupa Sportex — obróbka metali, cięcie laserowe, gięcie CNC</title>
+
+    <link rel="icon" href="./favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+
+    <link rel="preload" href="./fonts/SpaceGrotesk-sub.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="./fonts/Inter-sub.woff2" as="font" type="font/woff2" crossorigin />
+
+    <meta property="og:site_name" content="Grupa Sportex" />
+    <meta property="og:locale" content="pl_PL" />
+    <meta property="og:type" content="website" />
+
+    <style>
+      /* Fonty zmienne, self-hosted, podzbiór (polskie znaki + łacina) — ~42 KB łącznie */
+      @font-face {
+        font-family: "Space Grotesk";
+        src: url("./fonts/SpaceGrotesk-sub.woff2") format("woff2");
+        font-weight: 300 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: "Inter";
+        src: url("./fonts/Inter-sub.woff2") format("woff2");
+        font-weight: 300 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      html { background: #111317; }
+      body { margin: 0; }
+    </style>
+
+    <script>
+      /* Ukrywanie animacji wejścia tylko gdy JS działa (bez JS treść jest widoczna) */
+      document.documentElement.classList.add("js");
+    </script>
+    <script>
+      /* GitHub Pages: zamiana ?/sciezka (z 404.html) na właściwy adres */
+      (function () {
+        var l = window.location;
+        if (l.search && l.search.charAt(1) === "/") {
+          var q = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(null, "", l.pathname.replace(/\/+$/, "") + q + l.hash);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>
+      <div style="padding: 2rem; font-family: system-ui, sans-serif; color: #fff; background: #111317">
+        <h1>Grupa Sportex</h1>
+        <p>
+          Serwis wymaga włączonego JavaScriptu. Kontakt: +48 59 861 25 13,
+          biuro@lasersportex.pl, ul. Długa 53, 84-300 Mosty.
+        </p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

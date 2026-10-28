@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /
+
+# Wersja demonstracyjna — indeksowanie wyłączone, aby nie konkurować
+# z oficjalną witryną grupasportex.pl. Po migracji na domenę docelową
+# należy usunąć ten wpis i meta robots="noindex" z index.html.

@@ -1,0 +1,17 @@
+node_modules
+dist
+.ssr
+dist-ssr
+*.local
+
+# materiały robocze (zdjęcia źródłowe z grupasportex.pl, raporty pomiarów)
+_raw/
+lighthouse-report.json
+_*.png
+_*.jpg
+_*.json
+_*.sh
+
+# narzędzia
+.vite
+tsconfig.tsbuildinfo

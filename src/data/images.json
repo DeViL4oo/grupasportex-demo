@@ -1,0 +1,550 @@
+{
+ "hero-laser": {
+  "alt": "Glowica wycinarki laserowej tnie blache, iskry",
+  "width": 1141,
+  "height": 464,
+  "ratio": 2.4591,
+  "sources": [
+   {
+    "w": 640,
+    "src": "images/hero-laser-640.webp"
+   },
+   {
+    "w": 1141,
+    "src": "images/hero-laser-1141.webp"
+   }
+  ],
+  "fallback": "images/hero-laser-1141.webp"
+ },
+ "laser-cut-parts": {
+  "alt": "Wycinarka laserowa nad blacha z wycietymi detalami",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-cut-parts-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-cut-parts-800.webp"
+   }
+  ],
+  "fallback": "images/laser-cut-parts-800.webp"
+ },
+ "laser-sparks-close": {
+  "alt": "Strumien iskier podczas ciecia laserowego blachy",
+  "width": 1024,
+  "height": 684,
+  "ratio": 1.4971,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-sparks-close-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-sparks-close-800.webp"
+   }
+  ],
+  "fallback": "images/laser-sparks-close-800.webp"
+ },
+ "laser-sparks": {
+  "alt": "Wiazka lasera tnieaca stal",
+  "width": 1024,
+  "height": 684,
+  "ratio": 1.4971,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-sparks-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-sparks-800.webp"
+   }
+  ],
+  "fallback": "images/laser-sparks-800.webp"
+ },
+ "laser-head": {
+  "alt": "Glowica ciecia laserowego przy pracy",
+  "width": 1024,
+  "height": 684,
+  "ratio": 1.4971,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-head-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-head-800.webp"
+   }
+  ],
+  "fallback": "images/laser-head-800.webp"
+ },
+ "laser-sparks-2": {
+  "alt": "Iskry przy cieciu laserowym",
+  "width": 1024,
+  "height": 684,
+  "ratio": 1.4971,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-sparks-2-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-sparks-2-800.webp"
+   }
+  ],
+  "fallback": "images/laser-sparks-2-800.webp"
+ },
+ "laser-burst": {
+  "alt": "Proces ciecia laserowego stali",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-burst-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-burst-800.webp"
+   }
+  ],
+  "fallback": "images/laser-burst-800.webp"
+ },
+ "laser-detail": {
+  "alt": "Detal wyciety laserowo na stole maszyny",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/laser-detail-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/laser-detail-800.webp"
+   }
+  ],
+  "fallback": "images/laser-detail-800.webp"
+ },
+ "sign-cut": {
+  "alt": "Wykonany laserowo znak Grupa Sportex w blasze",
+  "width": 1200,
+  "height": 800,
+  "ratio": 1.5,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/sign-cut-480.webp"
+   },
+   {
+    "w": 900,
+    "src": "images/sign-cut-900.webp"
+   },
+   {
+    "w": 1200,
+    "src": "images/sign-cut-1200.webp"
+   }
+  ],
+  "fallback": "images/sign-cut-1200.webp"
+ },
+ "welding": {
+  "alt": "Spawanie konstrukcji stalowej w hali produkcyjnej",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/welding-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/welding-800.webp"
+   }
+  ],
+  "fallback": "images/welding-800.webp"
+ },
+ "profiles-stack": {
+  "alt": "Profile i ksztaltowniki stalowe na placu",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/profiles-stack-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/profiles-stack-800.webp"
+   }
+  ],
+  "fallback": "images/profiles-stack-800.webp"
+ },
+ "sheets-stack": {
+  "alt": "Arkusze blachy przygotowane do obrobki",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/sheets-stack-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/sheets-stack-800.webp"
+   }
+  ],
+  "fallback": "images/sheets-stack-800.webp"
+ },
+ "machined-part": {
+  "alt": "Precyzyjny detal metalowy po obrobce",
+  "width": 1024,
+  "height": 682,
+  "ratio": 1.5015,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/machined-part-480.webp"
+   },
+   {
+    "w": 800,
+    "src": "images/machined-part-800.webp"
+   }
+  ],
+  "fallback": "images/machined-part-800.webp"
+ },
+ "plant-exterior": {
+  "alt": "Hala produkcyjna Grupy Sportex z zewnatrz",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/plant-exterior-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/plant-exterior-640.webp"
+   }
+  ],
+  "fallback": "images/plant-exterior-640.webp"
+ },
+ "plant-exterior-2": {
+  "alt": "Zaklad produkcyjny Grupy Sportex",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/plant-exterior-2-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/plant-exterior-2-640.webp"
+   }
+  ],
+  "fallback": "images/plant-exterior-2-640.webp"
+ },
+ "plant-yard": {
+  "alt": "Plac i hala zakladu produkcyjnego",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/plant-yard-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/plant-yard-640.webp"
+   }
+  ],
+  "fallback": "images/plant-yard-640.webp"
+ },
+ "coating-line": {
+  "alt": "Ciag technologiczny lakierni proszkowej",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/coating-line-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/coating-line-640.webp"
+   }
+  ],
+  "fallback": "images/coating-line-640.webp"
+ },
+ "coating-racks": {
+  "alt": "Elementy stalowe na wezach lakierniczych",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/coating-racks-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/coating-racks-640.webp"
+   }
+  ],
+  "fallback": "images/coating-racks-640.webp"
+ },
+ "coating-racks-2": {
+  "alt": "Detale po lakierowaniu proszkowym na regalach",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/coating-racks-2-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/coating-racks-2-640.webp"
+   }
+  ],
+  "fallback": "images/coating-racks-2-640.webp"
+ },
+ "coating-frames": {
+  "alt": "Lakierowane proszkowo ramy na wezu",
+  "width": 360,
+  "height": 480,
+  "ratio": 0.75,
+  "sources": [
+   {
+    "w": 360,
+    "src": "images/coating-frames-360.webp"
+   },
+   {
+    "w": 360,
+    "src": "images/coating-frames-360.webp"
+   }
+  ],
+  "fallback": "images/coating-frames-360.webp"
+ },
+ "coating-profiles": {
+  "alt": "Profile aluminiowe po lakierowaniu proszkowym",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/coating-profiles-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/coating-profiles-640.webp"
+   }
+  ],
+  "fallback": "images/coating-profiles-640.webp"
+ },
+ "coating-panels": {
+  "alt": "Panele na linii lakierniczej",
+  "width": 1200,
+  "height": 487,
+  "ratio": 2.4641,
+  "sources": [
+   {
+    "w": 640,
+    "src": "images/coating-panels-640.webp"
+   },
+   {
+    "w": 1200,
+    "src": "images/coating-panels-1200.webp"
+   }
+  ],
+  "fallback": "images/coating-panels-1200.webp"
+ },
+ "bending-press": {
+  "alt": "Operator przy prasie krawedziowej CNC",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/bending-press-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/bending-press-640.webp"
+   }
+  ],
+  "fallback": "images/bending-press-640.webp"
+ },
+ "bending-press-2": {
+  "alt": "Giecie blachy na prasie krawedziowej",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/bending-press-2-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/bending-press-2-640.webp"
+   }
+  ],
+  "fallback": "images/bending-press-2-640.webp"
+ },
+ "bending-hall": {
+  "alt": "Hala z prasami krawedziowymi",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/bending-hall-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/bending-hall-640.webp"
+   }
+  ],
+  "fallback": "images/bending-hall-640.webp"
+ },
+ "bending-operator": {
+  "alt": "Praca przy maszynie CNC",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/bending-operator-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/bending-operator-640.webp"
+   }
+  ],
+  "fallback": "images/bending-operator-640.webp"
+ },
+ "bent-parts": {
+  "alt": "Elementy po gieciu na prasie CNC",
+  "width": 640,
+  "height": 427,
+  "ratio": 1.4988,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/bent-parts-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/bent-parts-640.webp"
+   }
+  ],
+  "fallback": "images/bent-parts-640.webp"
+ },
+ "rack-storage": {
+  "alt": "Regaly z elementami w hali produkcyjnej",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/rack-storage-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/rack-storage-640.webp"
+   }
+  ],
+  "fallback": "images/rack-storage-640.webp"
+ },
+ "packed-parts": {
+  "alt": "Zabezpieczone elementy gotowe do wysylki",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 480,
+    "src": "images/packed-parts-480.webp"
+   },
+   {
+    "w": 640,
+    "src": "images/packed-parts-640.webp"
+   }
+  ],
+  "fallback": "images/packed-parts-640.webp"
+ },
+ "painting-detail": {
+  "alt": "Detal lakierowany proszkowo",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 320,
+    "src": "images/painting-detail-320.webp"
+   },
+   {
+    "w": 480,
+    "src": "images/painting-detail-480.webp"
+   }
+  ],
+  "fallback": "images/painting-detail-480.webp"
+ },
+ "laser-sheet": {
+  "alt": "Blacha na stole wycinarki",
+  "width": 640,
+  "height": 480,
+  "ratio": 1.3333,
+  "sources": [
+   {
+    "w": 320,
+    "src": "images/laser-sheet-320.webp"
+   },
+   {
+    "w": 480,
+    "src": "images/laser-sheet-480.webp"
+   }
+  ],
+  "fallback": "images/laser-sheet-480.webp"
+ },
+ "map": {
+  "alt": "Mapa poglądowa lokalizacji Grupy Sportex — Mosty, ul. Długa 53",
+  "width": 1200,
+  "height": 600,
+  "ratio": 2.0,
+  "sources": [
+   {
+    "w": 800,
+    "src": "images/map-800.webp"
+   },
+   {
+    "w": 1200,
+    "src": "images/map-1200.webp"
+   }
+  ],
+  "fallback": "images/map-1200.webp"
+ }
+}

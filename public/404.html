@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grupa Sportex — przekierowanie</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      /*
+       * GitHub Pages nie obsługuje przepisywania adresów SPA.
+       * Ten plik przechwytuje wejście na podstronę (np. /ciecie-laserowe),
+       * zamienia ścieżkę na ?/ciecie-laserowe i przekierowuje do index.html,
+       * który odtwarza właściwy adres przez history.replaceState.
+       */
+      (function () {
+        var routes = [
+          "o-firmie",
+          "ciecie-laserowe",
+          "giecie-blach-cnc",
+          "spawanie-konstrukcji-stalowych",
+          "lakierowanie-proszkowe",
+          "realizacje",
+          "kontakt",
+          "polityka-prywatnosci",
+        ];
+        var l = window.location;
+        var parts = l.pathname.split("/").filter(Boolean);
+        var idx = -1;
+        for (var i = 0; i < parts.length; i++) {
+          if (routes.indexOf(parts[i]) !== -1) {
+            idx = i;
+            break;
+          }
+        }
+        var base = idx > 0 ? "/" + parts.slice(0, idx).join("/") + "/" : "/";
+        var rest = idx >= 0 ? parts.slice(idx).join("/") : "";
+        var target =
+          l.origin +
+          base +
+          "?/" +
+          rest +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash;
+        l.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Przekierowanie… <a href="./">Przejdź do strony głównej</a></p>
+  </body>
+</html>
