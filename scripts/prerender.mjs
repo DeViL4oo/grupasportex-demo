@@ -81,4 +81,12 @@ for (const route of routes) {
   console.log(`prerender: ${route} → ${outFile.replace(root, ".")} (${html.length} B HTML)`);
 }
 
+// 404.html: wstawienie właściwej ścieżki bazowej (działa też w podkatalogu Pages)
+const notFoundFile = resolve(dist, "404.html");
+if (existsSync(notFoundFile)) {
+  const html = readFileSync(notFoundFile, "utf8").replace(/__BASE_PATH__/g, base);
+  writeFileSync(notFoundFile, html, "utf8");
+  console.log(`404.html: base="${base}"`);
+}
+
 console.log(`Gotowe: ${routes.length} tras, base="${base}", site="${site}"`);

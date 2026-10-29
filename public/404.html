@@ -6,33 +6,20 @@
     <meta name="robots" content="noindex" />
     <script>
       /*
-       * GitHub Pages nie obsługuje przepisywania adresów SPA.
-       * Ten plik przechwytuje wejście na podstronę (np. /ciecie-laserowe),
-       * zamienia ścieżkę na ?/ciecie-laserowe i przekierowuje do index.html,
-       * który odtwarza właściwy adres przez history.replaceState.
+       * GitHub Pages nie przepisuje adresów SPA. Ten plik obsługuje każdy adres,
+       * którego nie ma jako osobnego pliku: zamienia ścieżkę na ?/<reszta>
+       * i przekierowuje do index.html, który odtwarza właściwy adres
+       * przez history.replaceState (router pokaże wtedy stronę lub 404).
+       *
+       * __BASE_PATH__ jest podmieniany przy buildzie (scripts/prerender.mjs),
+       * dzięki czemu działa zarówno w katalogu głównym, jak i w podkatalogu
+       * GitHub Pages (np. /grupasportex-demo/).
        */
       (function () {
-        var routes = [
-          "o-firmie",
-          "ciecie-laserowe",
-          "giecie-blach-cnc",
-          "spawanie-konstrukcji-stalowych",
-          "lakierowanie-proszkowe",
-          "realizacje",
-          "kontakt",
-          "polityka-prywatnosci",
-        ];
+        var base = "__BASE_PATH__";
         var l = window.location;
-        var parts = l.pathname.split("/").filter(Boolean);
-        var idx = -1;
-        for (var i = 0; i < parts.length; i++) {
-          if (routes.indexOf(parts[i]) !== -1) {
-            idx = i;
-            break;
-          }
-        }
-        var base = idx > 0 ? "/" + parts.slice(0, idx).join("/") + "/" : "/";
-        var rest = idx >= 0 ? parts.slice(idx).join("/") : "";
+        var path = l.pathname;
+        var rest = path.indexOf(base) === 0 ? path.slice(base.length) : path.replace(/^\/+/, "");
         var target =
           l.origin +
           base +
