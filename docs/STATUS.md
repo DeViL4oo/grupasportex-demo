@@ -104,12 +104,27 @@ Data: 28–29.10.2026 · Projekt: `D:\Projekty\Grupa Sportex` · gałąź: `main
 
 ---
 
-## 3. Stan środowiska
+## 3. Wdrożenie
+
+- Repozytorium: https://github.com/DeViL4oo/grupasportex-demo (publiczne)
+- Wersja online: **https://devil4oo.github.io/grupasportex-demo/**
+- Publikacja: GitHub Actions (`.github/workflows/deploy.yml`) przy każdym pushu
+  na `main`; Pages ustawione na `build_type=workflow`.
+- Sprawdzone na produkcji: strona główna, cztery podstrony usług, realizacje,
+  kontakt, polityka prywatności; deep-linki bez ukośnika robią 301 na wersję
+  z ukośnikiem; nieistniejący adres trafia na własną stronę 404 (nie na stronę
+  GitHuba); fonty, obrazy i JS ładują się z podkatalogu `/grupasportex-demo/`;
+  brak błędów w konsoli.
+
+## 4. Stan środowiska
 
 - Repozytorium git zainicjowane, commit początkowy: `f24bb47`.
 - `npm run dev` → http://127.0.0.1:5178 · `npm run preview` → http://127.0.0.1:4178.
 - `_raw/` (zdjęcia źródłowe, kafle mapy) jest w `.gitignore` — do ponownego
   wygenerowania obrazów służą `scripts/optimize-images.py` i `scripts/build-map.py`.
+- Poprawki z 29.10: odstępy w timeline procesu (tekst odsunięty od linii,
+  akcenty czerwone wyrównane do kolumn) oraz usunięta czerwona linia animowana
+  w headerze.
 - Uwaga: w logu dev-serwera mogą pozostać stare komunikaty o błędach transformacji
   z czasu edycji — kod jest czysty (wszystkie moduły zwracają 200, typecheck i build
   przechodzą).
