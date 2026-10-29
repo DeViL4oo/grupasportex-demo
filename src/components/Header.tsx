@@ -97,12 +97,6 @@ export function Header() {
             : "border-b border-transparent bg-gradient-to-b from-ink/85 via-ink/45 to-transparent"
         }`}
       >
-        <span
-          aria-hidden="true"
-          className={`absolute inset-x-0 top-0 h-px origin-left bg-brand transition-transform duration-500 ${
-            scrolled ? "scale-x-100" : "scale-x-0"
-          }`}
-        />
         <div className="wrap flex h-[76px] items-center justify-between gap-6 lg:h-[88px]">
           <Logo />
 
@@ -129,12 +123,6 @@ export function Header() {
                         aria-hidden="true"
                       />
                     </button>
-                    <span
-                      aria-hidden="true"
-                      className={`absolute -bottom-px left-3 right-3 h-px bg-brand transition-opacity ${
-                        isServiceRoute ? "opacity-100" : "opacity-0"
-                      }`}
-                    />
 
                     <div
                       id="services-menu"

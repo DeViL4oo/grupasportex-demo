@@ -313,21 +313,19 @@ function ProcessSection() {
               as="li"
               key={step.no}
               delay={i * 70}
-              className="relative border-t border-ink/15 pt-6 lg:pr-6"
+              className={`relative border-t border-ink/15 pt-6 ${
+                i > 0 ? "lg:border-l lg:border-ink/10 lg:pl-8" : ""
+              } ${i < processSteps.length - 1 ? "lg:pr-8" : ""}`}
             >
               <span
                 aria-hidden="true"
-                className="absolute -top-px left-0 h-px w-12 bg-brand"
+                className={`absolute -top-px h-px w-12 bg-brand ${
+                  i > 0 ? "left-0 lg:left-8" : "left-0"
+                }`}
               />
               <span className="num text-[0.6875rem] text-brand-soft">{step.no}</span>
               <h3 className="display-md mt-4 text-ink">{step.title}</h3>
               <p className="mt-3 max-w-xs text-sm leading-relaxed text-graphite/70">{step.text}</p>
-              {i < processSteps.length - 1 && (
-                <span
-                  aria-hidden="true"
-                  className="absolute right-0 top-0 hidden h-full w-px bg-ink/10 lg:block"
-                />
-              )}
             </Reveal>
           ))}
         </ol>
