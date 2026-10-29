@@ -331,8 +331,7 @@ function ProcessSection() {
         </ol>
 
         <p className="mt-10 max-w-2xl text-xs leading-relaxed text-graphite/70">
-          Opis orientacyjny — zakres i warunki realizacji ustalane są indywidualnie dla każdego
-          zamówienia.
+          Zakres i warunki realizacji ustalamy indywidualnie dla każdego zamówienia.
         </p>
       </div>
     </section>

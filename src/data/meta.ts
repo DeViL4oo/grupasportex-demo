@@ -48,6 +48,6 @@ export const pageMeta: Record<string, PageMeta> = {
   "/polityka-prywatnosci": {
     title: "Polityka prywatności",
     description:
-      "Przykładowa polityka prywatności serwisu demonstracyjnego Grupy Sportex — zakres danych, cel i podstawa przetwarzania, okres przechowywania, prawa osób, których dane dotyczą.",
+      "Polityka prywatności serwisu Grupy Sportex — zakres przetwarzanych danych, cel i podstawa prawna, okres przechowywania oraz prawa osób, których dane dotyczą.",
   },
 };

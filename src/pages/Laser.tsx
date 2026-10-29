@@ -112,8 +112,8 @@ export default function Laser() {
                 ))}
               </ul>
               <NoteBox>
-                Zapytanie wyceniamy na podstawie pliku DXF lub DWG. Przygotowanie plików opisujemy
-                niżej — pozwala skrócić czas wyceny.
+                Wycena cięcia opiera się na pliku DXF lub DWG — sposób przygotowania plików
+                opisujemy niżej.
               </NoteBox>
             </div>
           </div>

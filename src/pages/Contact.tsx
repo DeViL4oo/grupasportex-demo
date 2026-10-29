@@ -1,8 +1,8 @@
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { ContactForm } from "../components/ContactForm";
 import { Img } from "../components/Img";
 import { Reveal } from "../components/Reveal";
-import { PageIntro, SectionHead, NoteBox } from "../components/ui";
+import { PageIntro, SectionHead } from "../components/ui";
 import { useSeo, localBusinessJsonLd } from "../lib/seo";
 import { pageMeta } from "../data/meta";
 import { company, departments } from "../data/site";
@@ -158,20 +158,9 @@ export default function Contact() {
                     <Mail className="h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
                     {company.email}
                   </a>
-                  <p className="flex items-start gap-3 text-steel">
-                    <Clock className="mt-0.5 h-4 w-4 shrink-0 text-brand" aria-hidden="true" />
-                    <span>
-                      Godziny pracy zakładu nie zostały potwierdzone w materiałach źródłowych —
-                      przed publikacją należy je uzupełnić.
-                    </span>
-                  </p>
                 </div>
               </div>
 
-              <NoteBox>
-                Formularz w tej wersji demonstracyjnej nie wysyła danych na serwer — po walidacji
-                otwiera gotową wiadomość w programie pocztowym.
-              </NoteBox>
             </div>
           </div>
         </div>
@@ -220,19 +209,15 @@ export default function Contact() {
               />
             </span>
           </a>
-          <p className="mt-3 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-steel-dark">
-            <span>
-              Mapa poglądowa na podstawie adresu siedziby —{" "}
-              <a
-                href="https://www.openstreetmap.org/copyright"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline underline-offset-2 hover:text-steel"
-              >
-                © OpenStreetMap
-              </a>
-            </span>
-            <span>Przed publikacją warto potwierdzić punkt wjazdu na teren zakładu.</span>
+          <p className="mt-3 text-xs text-steel-dark">
+            <a
+              href="https://www.openstreetmap.org/copyright"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:text-steel"
+            >
+              © OpenStreetMap
+            </a>
           </p>
         </div>
       </section>

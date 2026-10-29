@@ -71,10 +71,6 @@ export default function Projects() {
             <GalleryGrid items={items} />
           </div>
 
-          <p className="mt-10 max-w-2xl text-xs leading-relaxed text-steel-dark">
-            Zdjęcia dokumentują procesy i wyroby zakładu. Nie stanowią oferty ani katalogu
-            konkretnych realizacji dla wskazanych klientów.
-          </p>
         </div>
       </section>
 

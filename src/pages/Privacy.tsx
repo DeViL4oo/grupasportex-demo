@@ -7,7 +7,6 @@ const sections = [
   {
     title: "1. Informacje ogólne",
     body: [
-      "Niniejszy dokument jest przykładową polityką prywatności przygotowaną na potrzeby wersji demonstracyjnej serwisu. Przed publikacją wymaga weryfikacji prawnej i uzupełnienia danych rejestrowych administratora.",
       "Administratorem danych przetwarzanych za pośrednictwem serwisu jest Grupa Sportex Sp. z o.o., ul. Długa 53, 84-300 Mosty.",
     ],
   },
@@ -72,7 +71,7 @@ export default function Privacy() {
       <PageIntro
         label="Informacje prawne"
         title="POLITYKA PRYWATNOŚCI"
-        lead="Dokument przykładowy, przygotowany dla wersji demonstracyjnej serwisu. Przed publikacją wymaga weryfikacji przez obsługę prawną firmy."
+        lead="Zasady przetwarzania danych osobowych przekazywanych za pośrednictwem serwisu."
       />
 
       <section className="bg-ink pb-20 lg:pb-28">

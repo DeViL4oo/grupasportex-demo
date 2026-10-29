@@ -23,8 +23,7 @@ export const company = {
   mapsUrl: "https://www.google.com/maps/search/?api=1&query=54.553787,17.801989",
   osmEmbed:
     "https://www.openstreetmap.org/export/embed.html?bbox=17.7890%2C54.5475%2C17.8148%2C54.5600&layer=mapnik&marker=54.553787%2C17.801989",
-  demoNote:
-    "Projekt koncepcyjny — niezależna propozycja nowej strony internetowej. Nie jest oficjalną witryną Grupy Sportex.",
+  demoNote: "Projekt koncepcyjny — niezależna propozycja nowej strony internetowej.",
 } as const;
 
 export type NavItem = { label: string; to: string; children?: NavItem[] };

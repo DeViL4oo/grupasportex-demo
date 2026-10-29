@@ -113,7 +113,7 @@ export function ContactForm() {
       values.message,
       "",
       "—",
-      "Wiadomość wygenerowana z formularza strony (wersja demonstracyjna).",
+      "Wiadomość wysłana z formularza kontaktowego na stronie grupasportex.pl.",
     ].join("\n");
 
     const url = `mailto:${company.email}?subject=${encodeURIComponent(
@@ -133,8 +133,7 @@ export function ContactForm() {
         <h3 className="display-md mt-6 text-white">Wiadomość przygotowana</h3>
         <p className="mt-4 text-sm leading-relaxed text-steel">
           Otworzyliśmy Twój program pocztowy z gotową treścią zapytania. Wyślij wiadomość, aby
-          trafiła do nas — formularz w tej wersji demonstracyjnej nie wysyła wiadomości
-          samodzielnie.
+          trafiła do naszego biura.
         </p>
         <p className="mt-4 text-sm text-steel">
           Dokumentację techniczną (DXF, DWG, STEP, PDF) dołącz bezpośrednio w wiadomości e-mail.
@@ -168,7 +167,6 @@ export function ContactForm() {
       onSubmit={onSubmit}
       noValidate
       className="border border-white/12 bg-white/[0.02] p-6 sm:p-8 lg:p-9"
-      aria-describedby="form-info"
     >
       <div className="flex items-baseline justify-between gap-4">
         <h3 className="display-md text-white">Formularz zapytania</h3>
@@ -176,10 +174,6 @@ export function ContactForm() {
           * wymagane
         </span>
       </div>
-      <p id="form-info" className="mt-3 text-xs leading-relaxed text-steel">
-        Formularz demonstracyjny: po walidacji otwiera gotową wiadomość w programie pocztowym.
-        Nie wysyła danych na serwer.
-      </p>
 
       {hasErrors && (
         <div
@@ -332,8 +326,7 @@ export function ContactForm() {
           />
           <p id="cf-message-hint" className="mt-2 flex items-start gap-2 text-xs text-steel-dark">
             <Paperclip className="mt-0.5 h-3.5 w-3.5 shrink-0" aria-hidden="true" />
-            Pliki (DXF, DWG, STEP, PDF) prześlij jako załącznik w wiadomości e-mail — formularz
-            nie obsługuje przesyłania plików.
+            Dokumentację (DXF, DWG, STEP, PDF) dołącz jako załącznik do wiadomości e-mail.
           </p>
           {errors.message && (
             <p id="cf-message-error" className={errorCls}>

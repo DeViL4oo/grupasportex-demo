@@ -4,7 +4,6 @@ import { Img } from "../components/Img";
 import { Reveal } from "../components/Reveal";
 import {
   CTASection,
-  NoteBox,
   PageIntro,
   RelatedServices,
   SectionHead,
@@ -203,11 +202,6 @@ export default function Bending() {
                 </figure>
               </Reveal>
             ))}
-          </div>
-          <div className="mt-8">
-            <NoteBox>
-              Zdjęcia przedstawiają stanowiska i detale w zakładzie produkcyjnym Grupy Sportex.
-            </NoteBox>
           </div>
         </div>
       </section>
