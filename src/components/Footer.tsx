@@ -10,8 +10,8 @@ export function Footer() {
     <footer className="relative overflow-hidden border-t border-white/10 bg-[#0b0d10]">
       <div aria-hidden="true" className="grid-lines pointer-events-none absolute inset-0 opacity-50" />
       <div className="wrap relative">
-        <div className="grid gap-12 py-14 md:grid-cols-12 md:gap-8 md:py-16">
-          <div className="md:col-span-4">
+        <div className="grid gap-12 py-14 sm:grid-cols-2 md:gap-10 md:py-16 lg:grid-cols-12 lg:gap-8">
+          <div className="sm:col-span-2 lg:col-span-4">
             <img
               src={asset("logo-sportex.png")}
               alt="GRUPA SPORTEX"
@@ -41,7 +41,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:col-span-3 md:col-start-6">
+          <div className="lg:col-span-3 lg:col-start-5">
             <h2 className="eyebrow text-steel-dark">Usługi</h2>
             <ul className="mt-5 space-y-3 text-sm">
               {services.map((s) => (
@@ -60,7 +60,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-2">
+          <div className="lg:col-span-2 lg:col-start-8">
             <h2 className="eyebrow text-steel-dark">Firma</h2>
             <ul className="mt-5 space-y-3 text-sm text-steel">
               <li>
@@ -86,7 +86,7 @@ export function Footer() {
             </ul>
           </div>
 
-          <div className="md:col-span-3 md:col-start-10">
+          <div className="sm:col-span-2 lg:col-span-3 lg:col-start-10">
             <h2 className="eyebrow text-steel-dark">Kontakt</h2>
             <ul className="mt-5 space-y-3 text-sm">
               <li>
@@ -115,11 +115,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-4 border-t border-white/10 py-6 text-xs text-steel-dark md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-3 border-t border-white/10 py-6 text-xs text-steel-dark lg:flex-row lg:items-center lg:justify-between">
           <p>
             © {year} Grupa Sportex. Wszelkie prawa zastrzeżone.
           </p>
-          <p className="max-w-2xl text-steel-dark md:text-right">{company.demoNote}</p>
+          <p className="max-w-xl text-steel-dark lg:text-right">{company.demoNote}</p>
         </div>
       </div>
     </footer>
